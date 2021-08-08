@@ -36,7 +36,8 @@ d3.json(url).then(function (data) {
             fillColor: color
         }).bindPopup(
             "<h2>" + `Magnitude: ${eq_features[i].properties.mag}` + "</h2> <hr> <h3>" +
-            `Location: ${eq_features[i].properties.place}` + "</h3> <hr> <h3>").addTo(myMap);
+            `Location: ${eq_features[i].properties.place}` + "</h3> <hr> <h3>" +
+            `Depth: ${depth} km` + "</h3> <hr> <h3>").addTo(myMap);
     };
 });
 
